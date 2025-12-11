@@ -1,0 +1,85 @@
+.restaurant-card {
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  margin: 10px 0 10px 15px;
+}
+
+.restaurant-card h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.restaurant-card p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  color: #666666;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-container img {
+  display: block;
+  width: 490px;
+  height: 251px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.new-label {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #99e2d0;
+  color: #008766;
+  width: 80px;
+  height: 29px;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-heart-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heart-logo {
+  border: none;
+  background-color: transparent;
+  width: 22px;
+  height: 21px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.heart-logo .fa-heart {
+  font-size: 22px;
+  transition: color 0.3s ease;
+  color: #333;
+}
+
+.heart-logo .liked {
+  color: #ff79da;
+}
+
+@media (max-width: 767.98px) {
+  .img-container img {
+    width: 100%;
+    height: auto;
+  }
+}
